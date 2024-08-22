@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" date-theme="light">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,11 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                primary: '#ABEF5F',
+                secondary: 'rgba(171, 239, 95, 0.5)',
+                bg_primary: 'rgba(255, 255, 255, 0)',
+                bg_secondary: 'rgb(255, 255, 255)',
+                
               }
             }
           }
@@ -32,7 +36,87 @@
         }
       </style>
 </head>
-<body>
+<body class="max-w-[1440px] mx-auto">
+    <header class=" ">
+        <!-- navigation bar -->
+         <nav class="lg:px-32 md:px-24 py-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                 
+                  <a class="btn btn-ghost text-xl"><i class="fa-sharp-duotone fa-solid fa-circle-arrow-right text-primary -rotate-45 text-2xl"></i><span class="text-3xl font-extrabold">Rinterio</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-[#737373]">
+                    <li><a>Home</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                   
+                   
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                <div class="flex gap-1 hidden lg:block md:block">
+                    <a href="#"><button class="hover:bg-gray-200 lg:w-12 h-12 rounded-full bg-white"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+                  <a href="#"><button class="hover:bg-gray-200 Lg:w-12 md:w-12 h-12 rounded-full bg-white lg:mr-4"><i class="fa-solid fa-cart-shopping"></i></button></a>
+                </div>
+                  <a class="btn bg-primary lg:text-xl md:text-xl font-extrabold ml-2 hidden md:block lg:block">Book Consult<i class="fa-solid fa-circle-arrow-right -rotate-45"></i></a>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#737373] right-0 ">
+                      <li><a>Home</a></li>
+                      <li><a>Service</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blogs</a></li>
+                      <li><a>Contact Us</a></li>
+                     
+                    </ul>
+                  </div>
+                </div>
+              </div>
+         </nav>
+         <!-- banner section -->
+          <section class="lg:px-32 md:px-24 px:10">
+            <div class="card bg-base-100 ">
+              <figure class="px-10 pt-10">
+                <img
+                  src="./assets/banner.png"
+                  alt="Shoes"
+                  class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center space-y-6">
+                <h2 class="lg:text-6xl md:text-5xl text-3xl font-extrabold">A barn house of this design has a striking appearance</h2>
+                <p class="font-medium text-[#494949]">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <div class="card-actions">
+                  <button class="btn bg-secondary text-xl font-bold">View Details <i class="fa-sharp-duotone fa-solid fa-circle-arrow-right text-primary -rotate-45 text-2xl"></i> </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
