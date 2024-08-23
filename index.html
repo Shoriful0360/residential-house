@@ -22,12 +22,17 @@
               colors: {
                 primary: '#ABEF5F',
                 secondary: 'rgba(171, 239, 95, 0.5)',
+                black_s: '#212121',
+                
                 bg_primary: 'rgba(255, 255, 255, 0)',
                 bg_secondary: 'rgb(255, 255, 255)',
                 
-              }
-            }
-          }
+              },
+              backgrounImage: {
+                back: "url('./assets/bg.jpg')"
+              },
+            },
+          },
         }
       </script>
       <style>
@@ -37,61 +42,53 @@
       </style>
 </head>
 <body class="max-w-[1440px] mx-auto font-family">
-    <header class="">
+    <header class="bg-gradient-to-t from-white to-[#F4F4F4]">
         <!-- navigation bar -->
-         <!-- <nav class="md:px-24 lg:px-32  py-12">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                 
-                  <a class="btn btn-ghost text-xl"><i class="fa-sharp-duotone fa-solid fa-circle-arrow-right text-primary -rotate-45 text-2xl"></i><span class="text-3xl font-extrabold">Rinterio</span></a>
+         <nav class="md:px-24 lg:px-32  py-12">
+          <div class="navbar ">
+            <div class="navbar-start">
+              
+              <a class="btn btn-ghost text-xl"><i class="fa-sharp-duotone fa-solid fa-circle-arrow-right text-primary -rotate-45 text-2xl"></i> <span class="text-3xl text-[#212121] font-extrabold">Rintario</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>service</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="flex items-center gap-4 ">
+                <div class="flex float-start hidden sm:block  text-lg ">
+                  <button class=""><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button><i class="fa-solid fa-cart-shopping"></i></button>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 text-[#737373]">
-                    <li><a>Home</a></li>
-                    <li><a>Service</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact Us</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                <div class="flex hidden lg:block md:block">
-                    <a href="#"><button class="hover:bg-gray-200 lg:w-12 lg:h-12 rounded-full bg-white"><i class="fa-solid fa-magnifying-glass"></i></button></a>
-                  <a href="#"><button class="hover:bg-gray-200 Lg:w-12 md:w-12 lg:h-12 rounded-full bg-white lg:mr-4"><i class="fa-solid fa-cart-shopping"></i></button></a>
-                </div>
-                  <a class="btn  bg-primary lg:text-xl md:text-xl font-extrabold ml-2 hidden md:block lg:block ">Book Consult<i class="fa-solid fa-circle-arrow-right -rotate-45"></i></a>
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-[#737373] right-0 ">
-                      <li><a>Home</a></li>
-                      <li><a>Service</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>Blogs</a></li>
-                      <li><a>Contact Us</a></li>
-                     
-                    </ul>
-                  </div>
-                </div>
+               <div class="hidden sm:block">
+                <a class="btn bg-[#ABEF5F] text-black text-xl ">Book Consult <i class="fa-sharp-duotone fa-solid fa-circle-arrow-right text-black -rotate-45 text-2xl"></i> </a>
+               </div>
               </div>
-         </nav> -->
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                  <li><a>Home</a></li>
+                  <li><a>service</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         </nav>
          <!-- banner section -->
           <section class="lg:px-32 md:px-24 px:10 mb-32">
-            <div class="card bg-base-100 ">
+            <div class="card ">
               <figure class="px-10 pt-10">
                 <img
                   src="./assets/banner.png"
@@ -337,9 +334,120 @@
         
          
       </section>
+      <!-- our article and news section -->
+       <section class="bg-[#F4F4F4]">
+         <div class="w-11/12 mx-auto py-24">
+          <div class="text-center">
+            <button class="bg-[#E5F3D6] rounded-lg"><i class="fa-solid fa-arrow-right"></i> Rinterio News</button>
+            <h1 class="text-[40px] font-bold text-[#212121]">Read Our Articles and News</h1>
+            <p class="font-medium mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          </div>
+         <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <!-- card 1 -->
+          <div class=" bg-base-100 card-compact rounded-xl shadow-xl">
+            <figure class="px-5 pt-6">
+              <img
+                src="./assets/article2.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+           <div class="flex gap-5">
+            <span class="text-sm font-medium"><i class="fa-solid fa-calendar-days text-xl text-gray-500"></i> July14, 2024</span>
+            <span class="text-sm font-medium"><i class="fa-solid fa-user text-xl text-gray-500"></i>  By Admin</span>
+           </div>
+              <h2 class="card-title text-xl font-extrabold text-[#494949]">How to choose the furniture right  of your home.</h2>
+              <p class="font-medium">The barn house captivates with its blend of rustic charm and modern. </p>
+              <h2 class="text-[18px] text-black font-bold">Read More <i class="fa-sharp-duotone fa-solid fa-circle-arrow-right text-primary -rotate-45 text-2xl"></i> </h2>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class=" bg-base-100 card-compact rounded-xl shadow-xl">
+            <figure class="px-5 pt-6">
+              <img
+                src="./assets/article1.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+           <div class="flex gap-5">
+            <span class="text-sm font-medium"><i class="fa-solid fa-calendar-days text-xl text-gray-500"></i> July14, 2024</span>
+            <span class="text-sm font-medium"><i class="fa-solid fa-user text-xl text-gray-500"></i>  By Admin</span>
+           </div>
+              <h2 class="card-title text-xl font-extrabold text-[#494949]">How to choose the furniture right  of your home.</h2>
+              <p class="font-medium">The barn house captivates with its blend of rustic charm and modern. </p>
+              <h2 class="text-[18px] text-black font-bold">Read More <i class="fa-sharp-duotone fa-solid fa-circle-arrow-right text-primary -rotate-45 text-2xl"></i> </h2>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class=" bg-base-100 card-compact rounded-xl shadow-xl">
+            <figure class="px-5 pt-6">
+              <img
+                src="./assets/article3.png"
+                alt="Shoes" />
+            </figure>
+            <div class="card-body">
+           <div class="flex gap-5">
+            <span class="text-sm font-medium"><i class="fa-solid fa-calendar-days text-xl text-gray-500"></i> July14, 2024</span>
+            <span class="text-sm font-medium"><i class="fa-solid fa-user text-xl text-gray-500"></i>  By Admin</span>
+           </div>
+              <h2 class="card-title text-xl font-extrabold text-[#494949]">How to choose the furniture right  of your home.</h2>
+              <p class="font-medium">The barn house captivates with its blend of rustic charm and modern. </p>
+              <h2 class="text-[18px] text-black font-bold">Read More <i class="fa-sharp-duotone fa-solid fa-circle-arrow-right text-primary -rotate-45 text-2xl"></i> </h2>
+            </div>
+          </div>
+         </div>
+         </div>
+       </section>
+       <!-- Let’s Discuss Next Project -->
+        <section class="mt-2">
+          <div
+  class="hero "
+  style="background-image: url(./assets/bg.jpg);">
+  <div class="hero bg-opacity-50 "></div>
+  
+  <div class="hero-content  text-center">
+    <div class="">
+      <button class="bg-[#E5F3D6] rounded-lg"><i class="fa-solid fa-arrow-right"></i> Let's Connect</button>
+      <h1 class=" text-[40px] font-bold text-[#212121]">Let’s Discuss Next Project</h1>
+      <p class="font-medium text-[#494949]">
+        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+      </p>
+     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <input type="text" placeholder="First Name*" class="input input-bordered w-full rounded-3xl " />
+      <input type="text" placeholder="Last Name*" class="input rounded-3xl input-bordered w-full " />
+      <input type="text" placeholder="Phone Number*" class="input rounded-3xl input-bordered w-full " />
+      <input type="text" placeholder="Email Number*" class="input rounded-3xl input-bordered w-full " />
+     </div>
+     <textarea class="textarea w-full rounded-2xl mt-3 textarea-bordered" placeholder="Write Your Messeage here"></textarea>
+     <button class="bg-[#ABEF5F] w-full rounded-2xl">Send Mail <i class="fa-solid fa-circle-arrow-up  p-3 rotate-45"></i></button>
+    </div>
+  </div>
+</div>
+
+        </section>
 
     </main>
-    <footer>
+    <!-- footer section -->
+    <footer class="bg-black  mt-5">
+      <div>
+        <footer class="footer footer-center text-base-content rounded p-10">
+         <h1> <a class="btn btn-ghost text-xl"><i class="fa-sharp-duotone fa-solid fa-circle-arrow-right text-primary -rotate-45 text-2xl"></i><span class="text-3x text-white font-extrabold">Rinterio</span></a></h1>
+         <p class="text-[#737373] font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+          <nav class="grid grid-cols-1 grid-flow-col gap-4 text-[#E9E9E9]">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">Service</a>
+            <a class="link link-hover">Portfolio</a>
+            <a class="link link-hover">Blogs</a>
+            <a class="link link-hover">Contact Us</a>
+          </nav>
+          <nav>
+           <button class="bg-[#ABEF5F] text-xl font-extrabold text-[#1C1C1C] rounded-2xl p-3">Book Consult <i class="fa-solid fa-circle-arrow-right -rotate-45"></i></button>
+          </nav>
+          <aside>
+            <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+          </aside>
+        </footer>
+      </div>
+
 
     </footer>
     
